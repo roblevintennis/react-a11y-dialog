@@ -1,0 +1,43 @@
+.dialog,
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.dialog {
+  z-index: 1001;
+  display: flex;
+}
+
+.dialog[aria-hidden="true"] {
+  display: none;
+}
+
+.dialog-overlay {
+  background-color: rgb(50 50 50 / 60%);
+}
+
+.dialog-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.dialog-content {
+  background-color: white;
+  margin: auto;
+  z-index: 1001;
+  position: relative;
+  padding: 1rem;
+  max-width: 90%;
+  width: 600px;
+  border-radius: 0.25rem;
+}
+
+.dialog-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
