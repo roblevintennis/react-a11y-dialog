@@ -14,8 +14,6 @@ const BASE_PROPS = {
   },
 }
 
-// Uncaught SyntaxError: The requested module '/src/App.jsx' does not provide an export named 'default'
-// const App = props => {
 const App = () => {
   const dialog = React.useRef()
 
